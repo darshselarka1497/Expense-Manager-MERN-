@@ -1,6 +1,6 @@
+//webpack.config.js
 var path = require('path');
 var webpack = require('webpack');
-
 module.exports = {
  entry: './client/index.js',
  output: {
@@ -13,7 +13,7 @@ module.exports = {
    loader: 'babel-loader',
    exclude: /node_modules/,
    query: {
-    presets: ['es2015', 'react']
+    presets: ['@babel/env', '@babel/react']
    }
   },
   {
